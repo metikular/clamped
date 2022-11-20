@@ -6,6 +6,10 @@ RSpec.describe String do
       expect("apple".clamped(%w[banana orange])).to be_nil
     end
 
+    it "returns default value when not in whitelist" do
+      expect("apple".clamped(%w[banana orange], default: "strawberry")).to eq "strawberry"
+    end
+
     it "returns the same string when in whitelist" do
       expect("apple".clamped(%w[apple banana orange])).to eq "apple"
     end
@@ -14,6 +18,10 @@ RSpec.describe String do
   context "when not in strict mode" do
     it "returns nil when not in whitelist" do
       expect("apple".clamped(%w[banana orange], strict: false)).to be_nil
+    end
+
+    it "returns default value when not in whitelist" do
+      expect("apple".clamped(%w[banana orange], strict: false, default: "strawberry")).to eq "strawberry"
     end
 
     it "returns the same string when in whitelist" do

@@ -41,6 +41,10 @@ Supported classes:
 
 "apple".clamped(%w[apple banana])
 # "apple"
+
+
+"apple".clamped(%w[banana orange], default: "strawberry")
+# "strawberry"
 ```
 
 `strict: false` calls `to_s` on the passed array:
@@ -59,6 +63,10 @@ Supported classes:
 
 :apple.clamped(%i[apple banana])
 # :apple
+
+
+:apple.clamped(%i[banana orange], default: :strawberry)
+# :strawberry
 ```
 
 `strict: false` calls `to_sym` on the passed array:
