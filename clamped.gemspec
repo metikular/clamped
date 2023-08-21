@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version = Clamped::VERSION
   spec.authors = ["Serge Hänni"]
   spec.email = ["serge@metikular.ch"]
+  spec.license = "MIT"
 
   spec.summary = "Adds convenience methods to clamp values to a whitelist."
   spec.homepage = "https://github.com/metikular/clamped"
