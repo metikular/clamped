@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["serge@metikular.ch"]
   spec.license = "MIT"
 
-  spec.summary = "Adds convenience methods to clamp values to a whitelist."
+  spec.summary = "Adds convenience methods to clamp values to an allowlist."
   spec.homepage = "https://github.com/metikular/clamped"
   spec.required_ruby_version = ">= 2.6.0"
 

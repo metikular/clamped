@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Hash do
-  it "returns only elements in whitelist" do
+  it "returns only elements in allowlist" do
     expect(%i[apple banana orange].clamped(%i[apple banana])).to eq %i[apple banana]
     expect(
       {

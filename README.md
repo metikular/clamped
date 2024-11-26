@@ -1,6 +1,6 @@
 # Clamped
 
-`Clamped` monkey patches a couple of Ruby classes to clamp values to a whitelist.
+`Clamped` monkey patches a couple of Ruby classes to clamp values to an allowlist.
 
 For example:
 

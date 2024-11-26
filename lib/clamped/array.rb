@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Array
-  def clamped(whitelist)
+  def clamped(allowlist)
     self.select do |item|
-      whitelist.include?(item)
+      allowlist.include?(item)
     end
   end
 end

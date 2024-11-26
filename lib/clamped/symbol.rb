@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Symbol
-  def clamped(whitelist, strict: true, default: nil)
+  def clamped(allowlist, strict: true, default: nil)
     is_included = proc do |item|
       if strict
         item == self
@@ -10,7 +10,7 @@ class Symbol
       end
     end
 
-    return self if whitelist.any?(is_included)
+    return self if allowlist.any?(is_included)
     default
   end
 end

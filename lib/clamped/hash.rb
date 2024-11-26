@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Hash
-  def clamped(whitelist)
-    slice(*whitelist)
+  def clamped(allowlist)
+    slice(*allowlist)
   end
 end
